@@ -1,0 +1,43 @@
+/* styles.css */
+body {
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+.stTextInput>div>div>input {
+    background-color: #2e2e2e; /* Fundo do campo de entrada */
+    color: #e0e0e0; /* Cor do texto no campo de entrada */
+}
+
+.stButton>button {
+    background-color: #007bff; /* Azul dos botões */
+    color: #ffffff; /* Texto branco no botão */
+    border: 1px solid #0056b3; /* Azul mais escuro para a borda */
+}
+
+.stButton>button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+.stSidebar {
+    background-color: #2e2e2e; /* Fundo escuro da barra lateral */
+}
+
+.stSidebar .stButton>button {
+    background-color: #00ff00; /* Verde limão dos botões na barra lateral */
+    color: #000000; /* Texto preto no botão da barra lateral */
+}
+
+.stSidebar .stButton>button:hover {
+    background-color: #00cc00; /* Verde limão mais escuro ao passar o mouse */
+}
+
+.streamlit-expanderHeader {
+    background-color: #2e2e2e; /* Fundo escuro dos headers do expander */
+    color: #00ff00; /* Verde limão do texto dos headers do expander */
+}
+
+.streamlit-expanderContent {
+    background-color: #1e1e1e; /* Fundo escuro do conteúdo do expander */
+    color: #e0e0e0; /* Texto claro no conteúdo do expander */
+}
