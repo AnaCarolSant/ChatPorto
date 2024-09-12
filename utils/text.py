@@ -1,12 +1,11 @@
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 
-def process_files(files):
+def process_fixed_file(file_path):
     text = ""
-    for file in files:
-        pdf = PdfReader(file)
-        for page in pdf.pages:
-            text += page.extract_text()
+    pdf = PdfReader(file_path)
+    for page in pdf.pages:
+        text += page.extract_text()
     return text
 
 def create_text_chunks(text):
@@ -16,8 +15,5 @@ def create_text_chunks(text):
         chunk_overlap=300, 
         length_function=len
     )
-
     chunks = text_splitter.split_text(text)
     return chunks
-
-
