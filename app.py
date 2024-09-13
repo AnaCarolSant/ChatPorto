@@ -102,7 +102,7 @@ def main():
     # Carregar e processar o PDF fixo ao iniciar o app
     if 'conversation' not in st.session_state:
 
-        pdf_path = r'C:\\Users\\user\Desktop\\ChatPorto\\PDF_AUTODIAG.pdf'
+        pdf_path = 'PDF_AUTODIAG.pdf'
         all_files_text = text.process_fixed_file(pdf_path)
         chunks = text.create_text_chunks(all_files_text)
         vectorstore = chatbot.create_vectorstore(chunks)
